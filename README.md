@@ -2,9 +2,23 @@
 
 ## 安装
 
+```shell
+git clone git@github.com:tianyuwu/vue3-pc.git
+cd vue-pc
+yarn
+```
+
 ## 开发环境
 
+```shell
+yarn dev
+```
+
 ## 构建
+
+```shell
+yarn build
+```
 
 ## 集成功能
 
