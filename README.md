@@ -4,7 +4,7 @@
 
 ```shell
 git clone git@github.com:tianyuwu/vue3-pc.git
-cd vue-pc
+cd vue3-pc
 yarn
 ```
 
