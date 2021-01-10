@@ -30,6 +30,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'], // 大括号中需要有空格
     'space-before-function-paren': ['error', 'never'], //函数名和参数间不需要有空格
     '@typescript-eslint/no-empty-function': 'off', // 接受空函数
+    '@typescript-eslint/explicit-module-boundary-types': 'off', // 接受函数不返回值
     // vue中不允许写静态的行内样式
     'vue/no-static-inline-styles': [
       'error',

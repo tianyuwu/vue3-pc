@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <span>{{ text }}</span>
+    <el-button type="primary">主要按钮</el-button>
   </div>
 </template>
 
@@ -23,12 +24,6 @@ export default defineComponent({
 <style lang="scss">
 .container {
   position: relative;
-  color: #333;
   text-align: left;
-
-  span {
-    font-size: 14px;
-    color: #666;
-  }
 }
 </style>
