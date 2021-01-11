@@ -1,0 +1,27 @@
+/**
+ * 公共样式，一般是与业务无关的通用样式表
+ */
+
+ /*
+ * flex容器
+ */
+.flex {
+  display: flex;
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}

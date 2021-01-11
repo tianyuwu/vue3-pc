@@ -23,7 +23,5 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .container {
-  position: relative;
-  text-align: left;
 }
 </style>
