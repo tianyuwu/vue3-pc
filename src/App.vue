@@ -1,27 +1,23 @@
 <template>
-  <div class="container">
-    <span>{{ text }}</span>
-    <el-button type="primary">主要按钮</el-button>
-  </div>
+  <RouterMenu :data="data" mode="horizontal"></RouterMenu>
+  <router-view></router-view>
 </template>
 
 <script type="ts">
-import { defineComponent } from 'vue'
-import { useTest } from './hooks/useTest'
+import { defineComponent, ref } from 'vue';
+import { RouterMenu } from './components/element/NavMenu'
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
+  components:{ RouterMenu },
   setup() {
-    // const text = ref<string>("Hello World")
-    const text = useTest('Hello World')
-
+    const data = ref([
+      { name:'Home', key:"/" },
+      { name: 'About', key:"/about" },
+    ])
     return {
-      text
+      data
     }
-  }
+  },
 })
 </script>
-<style lang="scss">
-.container {
-}
-</style>
