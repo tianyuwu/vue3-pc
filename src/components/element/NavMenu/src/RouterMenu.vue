@@ -7,13 +7,15 @@
 </template>
 
 <script lang="ts">
+/**
+ * 路由导航菜单
+ */
 import { defineComponent, PropType, ref, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 import { MenuItem } from './types'
 export default defineComponent({
   name: 'RouterMenu',
   props: {
-    // 菜单数据
     data: {
       type: Array as PropType<MenuItem[]>,
       default: () => [],
@@ -32,14 +34,5 @@ export default defineComponent({
       activeIndex,
     }
   },
-  mounted() {
-    // setTimeout(() => {
-    //   console.log(this.$route.path)
-    // }, 0)
-  },
 })
 </script>
-<style>
-.router-menu {
-}
-</style>
