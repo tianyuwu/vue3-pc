@@ -16,8 +16,7 @@
       "})",
       "",
       "</script>",
-      "<style lang=\"less\" scoped>",
-      "  .$1{}",
+      "<style>",
       "</style>",
       ""
     ],
