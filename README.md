@@ -28,5 +28,6 @@ yarn build
 - [x] 集成 PC 端的 UI 框架 Element-plus
 - [x] 集成 Vue-Router + 路由切换进度条 Nprogress
 - [x] 页面加载动画
+- [x] 集成快速样式库 TailWind
 - [ ] 集成接口请求库 Axios
 - [ ] 其他待补充功能
