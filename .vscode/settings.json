@@ -3,7 +3,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "stylelint.autoFix": true,
   "prettier.packageManager": "yarn",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -16,6 +15,13 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "[scss]": {
+    "editor.formatOnSave": true
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
