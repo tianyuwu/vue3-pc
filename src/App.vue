@@ -1,5 +1,5 @@
 <template>
-  <RouterMenu :data="data" mode="horizontal"></RouterMenu>
+  <!-- <RouterMenu :data="data" mode="horizontal"></RouterMenu> -->
   <router-view></router-view>
 </template>
 
@@ -9,7 +9,7 @@ import { RouterMenu } from '/@/components/element/NavMenu'
 
 export default defineComponent({
   name: "App",
-  components:{ RouterMenu },
+  // components:{ RouterMenu },
   setup() {
     const data = ref([
       { name:'Home', key:"/home" },
