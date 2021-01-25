@@ -12,7 +12,7 @@ export default defineComponent({
   name: 'Sub',
   components: { BasicTable },
   props: {},
-  setup(props) {
+  setup() {
     return {
       columns: [
         {
