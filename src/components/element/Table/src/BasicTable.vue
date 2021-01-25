@@ -22,6 +22,12 @@ export default defineComponent({
       type: [Array] as PropType<any[]>,
       default: () => [],
     },
+    api: {
+      type: Function as PropType<(...arg: any[]) => Promise<any>>,
+      default: null,
+    },
+    // 使用搜索表单
+    isTreeTable: Boolean,
   },
   setup() {},
 })
