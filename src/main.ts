@@ -7,6 +7,8 @@ import './assets/styles/index.scss'
 
 const app = createApp(App)
 
+console.log(import.meta.env)
+
 setupRouter(app)
 setupElementUI(app)
 

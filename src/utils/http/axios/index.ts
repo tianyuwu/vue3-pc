@@ -109,7 +109,7 @@ function createAxios(opt?: Partial<CreateAxiosOptions>) {
       {
         timeout: 10 * 1000,
         // 基础接口地址
-        // baseURL: globSetting.apiUrl,
+        baseURL: import.meta.env.VITE_API_URL,
         // 接口可能会有通用的地址部分，可以统一抽取出来
         prefixUrl: '',
         headers: { 'Content-Type': 'application/json;charset=UTF-8' },

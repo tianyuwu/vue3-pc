@@ -9,5 +9,14 @@ export default {
   alias: {
     '/@/': `${pathResolve('src')}/`,
   },
+  server: {
+    proxy: {
+      '/bf': {
+        target: 'https://test.brightfuture360.com/bf',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/bf/, ''),
+      },
+    },
+  },
   plugins: [vue()],
 }
