@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref, watchEffect } from 'vue'
 import { BasicTable } from '/@/components/element/Table'
 import { defHttp } from '/@/utils/http/axios'
 export default defineComponent({
@@ -13,6 +13,19 @@ export default defineComponent({
   components: { BasicTable },
   props: {},
   setup(props) {
+    const tableData = ref([])
+    async function fetchData() {
+      const res = await defHttp.request({
+        url: '/bf/home/teachers',
+        method: 'GET',
+      })
+      tableData.value = res.data.records
+    }
+
+    watchEffect(() => {
+      fetchData()
+    })
+
     return {
       columns: [
         {
